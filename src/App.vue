@@ -11,4 +11,9 @@ import Header from "./components/Header.vue";
   </main>
 </template>
 
-<style scoped></style>
+<style scoped>
+main{
+  background: wheat;
+  min-height: 100vh;
+}
+</style>
