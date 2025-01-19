@@ -1,5 +1,5 @@
 export let GamesCategory = async (category) => {
-    let url = `https://free-to-play-games-database.p.rapidapi.com/api/games?category=${category}&sort-by=release-date`;
+    let url = `https://free-to-play-games-database.p.rapidapi.com/api/games?category=${category}&sort-by=alphabetical`;
     let options = {
         method: "GET",
         headers: {

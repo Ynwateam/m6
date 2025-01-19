@@ -6,13 +6,12 @@ defineProps({
 
 <template>
     <div>
-        <img src="https://sun9-45.userapi.com/impg/4sY6-_rjCZrOXkfXm7N236S3sG_F0pzccDRUdA/FvpGIYpTuwM.jpg?size=525x604&quality=95&sign=3701e0dd83e1bfa7a76e03df5d7e641e&type=album"/>
-        <h2>Заголовок</h2>
-        <p>
-            Очень красивый текст гвинт гвинт Геральт. Смотрите я черешня.
-
-        </p>
-        {{game}}
+        <img :src="game.thumbnail">
+        <h2>{{game.title}}</h2>
+        <p>{{game.short_description}}</p>
+        <h3>Платформа: {{game.platform}}</h3>
+        <h3>Релиз: {{game.release_date}}</h3>
+        <a :href="game.freetogame_profile_url">Перейти на сайт</a>
     </div>
 </template>
 
@@ -22,7 +21,7 @@ div{
     padding: 10px;
     border-radius: 10px;
     background: grey;
-    color:antiquewhite;
+    color:rgb(255, 255, 255);
     transition: all 0.5s;
     text-align: center;
     display: flex !important;
@@ -39,13 +38,32 @@ h2{
     margin: 20px 0;
     font-size: 40px;
     color: white;
+    font-weight: bold;
+    margin-top: 20px;
+    line-height: 1.5;
 }
 p{
     text-align: center;
     width: 100%;
-    margin: 10px 0;
-    font-size: 30px;
+    margin: 20px 0;
+    font-size: 20px;
     color: white;
+    font-weight: bold;
+    margin-top: 15px;
+    line-height: 1.5;
+}
+h3{
+    margin: 15px 0;
 
+    text-align: center;
+    text-align: left;
+    font: 15px;
+}
+a{
+    background: blue;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 16px;
+    margin-top: auto;
 }
 </style>

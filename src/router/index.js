@@ -5,6 +5,8 @@ import Royale from "../views/Royale.vue";
 import Rpg from "../views/Rpg.vue";
 import Shooter from "../views/Shooter.vue";
 import Strategy from "../views/Strategy.vue";
+import Anime from "../views/Anime.vue";
+import Voxel from "../views/Voxel.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -13,6 +15,16 @@ const router = createRouter({
       path: "/",
       name: "main",
       component: Main,
+    },
+    {
+      path: "/voxel",
+      name: "voxel",
+      component: Voxel,
+    },
+    {
+      path: "/anime",
+      name: "anime",
+      component: Anime,
     },
     {
       path: "/fantasy",

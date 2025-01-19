@@ -13,7 +13,7 @@ import Header from "./components/Header.vue";
 
 <style scoped>
 main{
-  background: wheat;
+  background: rgba(102, 221, 193, 0.668);
   min-height: 100vh;
 }
 </style>
